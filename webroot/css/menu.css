@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.01.2016, 12:39:24
+    Author     : Yaroslav
+*/
+nav{
+    width: 1645px;
+    margin: 0 auto;
+    background-color: #3498db;
+    border-radius: 5px;
+    position: relative;
+}
+#navigator{
+    
+    display: table;
+    width: 1645px;
+}
+nav .wrapper{
+    width: 1645px;
+/*    overflow: hidden;*/
+    margin: 0 auto;
+}
+.nav_cor_l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 30px;
+    cursor: pointer;
+    font-family: Liga;
+    line-height: 50px;
+    font-size: 30px;
+    color: #fff;
+    display: none;
+    
+}
+.nav_cor_r{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Liga;
+    line-height: 50px;
+    font-size: 30px;
+    color: #fff;
+}
+#navigator li{
+    display: inline-block;
+    width: 235px;
+    color: #fff;
+    box-sizing: border-box;
+    border-right: 1px solid #aaa;
+    height: 50px;
+    position: relative;
+}
+#navigator li:last-child{
+    border-right: none;
+    
+}
+#navigator li:first-child{
+    border-left: 0px solid #aaa;
+    
+}
+#navigator li a{
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+#navigator li .subnav{
+    left: 0; 
+    max-height: 0; 
+    position: absolute; 
+    top: 100%; 
+    z-index: 0; 
+    width: 300px;
+    
+    -webkit-perspective: 400px; 
+    -moz-perspective: 400px; 
+    -ms-perspective: 400px; 
+    -o-perspective: 400px; 
+    perspective: 400px; 
+    pointer-events: none;
+}
+#navigator li .subnav li{
+    opacity: 0; 
+    background-color: #000;
+    -webkit-transform: rotateY(90deg); 
+    -moz-transform: rotateY(90deg); 
+    -ms-transform: rotateY(90deg); 
+    -o-transform: rotateY(90deg); 
+    transform: rotateY(90deg); 
+
+    -webkit-transition: opacity .4s, -webkit-transform .5s; 
+    -moz-transition: opacity .4s, -moz-transform .5s; 
+    -ms-transition: opacity .4s, -ms-transform .5s; 
+    -o-transition: opacity .4s, -o-transform .5s; 
+    transition: opacity .4s, transform .5s; 
+}
+#navigator li .subnav li:hover a{
+    border-left: 3px solid #454545; 
+    border-radius: 0; 
+    color: #ffffff;
+    
+}
+#navigator > li:hover .subnav, #navigator > li:focus .subnav{
+    max-height: 2000px; 
+    z-index: 10000;
+    pointer-events: auto;
+} 
+#navigator > li:hover .subnav li, #navigator > li:focus .subnav li{
+    opacity: 1; 
+
+    -webkit-transform: none; 
+    -moz-transform: none; 
+    -ms-transform: none; 
+    -o-transform: none; 
+    transform: none; 
+}
+.hidden{
+    transform: scale(0);
+    //display: none;
+}

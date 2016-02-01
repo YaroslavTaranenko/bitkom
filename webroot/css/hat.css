@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31.01.2016, 0:57:33
+    Author     : Yaroslav
+*/
+ @font-face {
+    font-family: Liga; /* Имя шрифта */
+    src: url(fonts/WebSymbolsLiga-Regular.otf); /* Путь к файлу со шрифтом */
+   }
+*{ margin: 0; padding: 0; font-family: Arial, Tahoma, Verdana, sans-serif; box-sizing: border-box; }
+ul{ list-style: none; }
+a{ text-decoration: none; }
+
+#top_panel{
+    height: 40px;
+    width: 100%;
+    background-color: #eee;
+    
+}
+#top_panel .wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 5px;
+    display: table;
+}
+#top_panel .left, #top_panel .right{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+}
+#top_panel .right{
+    text-align: right;
+    border: 0px solid black;
+}
+.ws{
+    font-family: Liga;
+}
+#user{
+    color: #46a0ff;
+    box-sizing: border-box;
+    border: 2px solid #cdf;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 25px;
+    font-size: 14px;
+    //margin: 5px 0 0 0;
+}
+#user:hover{
+    color: #0660cf;
+}
+#top_menu ul{
+    width: 100%;
+    
+}
+#top_menu li{
+    margin-left: 25px;
+    display: inline;
+    font-size: 14px;
+}
+#top_menu li a{
+    color: #0660cf;
+}
+/*================================================== top panel ==============================*/
+#header{
+    width: 1000px;
+    margin: 0 auto;
+    display: table;
+}
+#logo_block{
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    width: 250px;
+    border: 0px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#search_block{
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    width: 250px;
+    border: 0px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#phone_block{
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    width: 250px;
+    border: 0px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+}
+#basket_block{
+    margin: 0;
+    padding: 0;
+    height: 170px;
+    width: 250px;
+    border: 0px solid black;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
