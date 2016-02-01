@@ -1,0 +1,19 @@
+2016-02-01 18:07:38 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.block' doesn't exist
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'block', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('block', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('block')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(243): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(195): Bake\Shell\Task\ModelTask->findBelongsTo(Object(App\Model\Table\BlockTable), Array)
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(App\Model\Table\BlockTable))
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Block')
+#7 [internal function]: Bake\Shell\Task\ModelTask->main('block')
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Console\Shell.php(455): call_user_func_array(Array, Array)
+#9 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Console\Shell.php(449): Cake\Console\Shell->runCommand(Array, false)
+#10 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 E:\WWW\bitkom\htdocs\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+

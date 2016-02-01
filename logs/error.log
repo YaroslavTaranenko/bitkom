@@ -8744,3 +8744,369 @@ Stack Trace:
 2016-01-31 14:13:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-01-31 14:14:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
 2016-01-31 14:14:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 06:51:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 06:51:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:29:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:35:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:38:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:38:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Components could not be found.
+Exception Attributes: array (
+  'class' => 'Components',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /components/
+Referer URL: http://bitkom.loc/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 17:46:41 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:46:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.blocks' doesn't exist
+Request URL: /block
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'blocks', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('blocks', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('blocks')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(333): Cake\ORM\Table->primaryKey()
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(311): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BlockTable), Object(Cake\Database\TypeMap), Array)
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(635): Cake\ORM\Query->contain(Array)
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(1756): Cake\ORM\Query->applyOptions(Array)
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(937): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#11 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#12 [internal function]: App\Controller\BlockController->index()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#14 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#16 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-01 17:46:50 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:46:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Blocks could not be found.
+Exception Attributes: array (
+  'class' => 'Blocks',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /blocks/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 17:47:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:47:01 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.blocks' doesn't exist
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'blocks', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('blocks', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('blocks')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(333): Cake\ORM\Table->primaryKey()
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(311): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BlockTable), Object(Cake\Database\TypeMap), Array)
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(635): Cake\ORM\Query->contain(Array)
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(1756): Cake\ORM\Query->applyOptions(Array)
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(937): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#11 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#12 [internal function]: App\Controller\BlockController->index()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#14 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#16 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-01 17:50:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:50:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Blocks could not be found.
+Exception Attributes: array (
+  'class' => 'Blocks',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /blocks/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 17:50:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:50:43 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.blocks' doesn't exist
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'blocks', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('blocks', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('blocks')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\BlockTable))
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\BlockTable))
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#9 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#10 [internal function]: App\Controller\BlockController->index()
+#11 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#12 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#14 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2016-02-01 17:52:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:52:21 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.blocks' doesn't exist
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'blocks', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('blocks', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('blocks')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(173): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(131): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\BlockTable))
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(1232): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\BlockTable))
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(935): Cake\ORM\Table->query()
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#9 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#10 [internal function]: App\Controller\BlockController->index()
+#11 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#12 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#14 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2016-02-01 17:53:30 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:53:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:54:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:54:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:54:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:54:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Products could not be found.
+Exception Attributes: array (
+  'class' => 'Products',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /products
+Referer URL: http://bitkom.loc/block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 17:54:42 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:54:42 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "block" with primary key [NULL]
+Request URL: /block/view
+Referer URL: http://bitkom.loc/block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(38): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BlockController->view()
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#5 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-01 17:56:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:56:37 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:56:38 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:56:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:56:57 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "block" with primary key [NULL]
+Request URL: /block/view
+Referer URL: http://bitkom.loc/block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(38): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BlockController->view()
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#5 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-01 17:57:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:57:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:57:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:57:32 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:57:32 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "block" with primary key [NULL]
+Request URL: /block/edit
+Referer URL: http://bitkom.loc/block
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(76): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BlockController->edit()
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#5 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-01 17:57:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:59:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:59:01 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bitkom.blocks' doesn't exist
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'blocks', Array, Object(Cake\Database\Schema\Table))
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('blocks', Array)
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('blocks')
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(333): Cake\ORM\Table->primaryKey()
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(311): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\BlockTable), Object(Cake\Database\TypeMap), Array)
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(635): Cake\ORM\Query->contain(Array)
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(1756): Cake\ORM\Query->applyOptions(Array)
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Table.php(937): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#11 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#12 [internal function]: App\Controller\BlockController->index()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#14 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#16 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-01 17:59:34 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 17:59:34 Error: [InvalidArgumentException] Block is not associated with Blocks
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\BlockTable), 'Blocks', Array, Array)
+#1 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(368): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\BlockTable))
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(339): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\BlockTable))
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(905): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\BlockTable), true)
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(861): Cake\ORM\Query->_transformQuery()
+#5 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(880): Cake\Database\Query->execute()
+#10 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\ORM\Query.php(831): Cake\ORM\Query->_all()
+#12 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(689): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\BlockTable), Array)
+#14 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(23): Cake\Controller\Controller->paginate(Object(App\Model\Table\BlockTable))
+#15 [internal function]: App\Controller\BlockController->index()
+#16 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#17 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#19 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-02-01 18:00:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:00:51 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:00:51 Error: [RuntimeException] Table "App\Model\Table\BlockTable" is not associated with "Blocks"
+Request URL: /block/edit/3
+Referer URL: http://bitkom.loc/block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(86): Cake\ORM\Table->__get('Blocks')
+#1 [internal function]: App\Controller\BlockController->edit('3')
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#5 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-01 18:01:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:01:20 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:01:59 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:02:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:02:00 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:02:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:02:01 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "block" with primary key [NULL]
+Request URL: /block/edit
+Referer URL: http://bitkom.loc/block
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\src\Controller\BlockController.php(76): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\BlockController->edit()
+#2 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Controller\Controller.php(430): call_user_func_array(Array, Array)
+#3 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 E:\WWW\bitkom\htdocs\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BlockController))
+#5 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-02-01 18:09:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:09:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Block could not be found.
+Exception Attributes: array (
+  'class' => 'Block',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /block
+Referer URL: http://bitkom.loc/block/view/3
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 18:09:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:10:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:11:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:12:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:12:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:16:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:17:44 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:17:45 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:17:58 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:18:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:18:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:18:08 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:18:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:07 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:12 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:15 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:24 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:20:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:29:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:30:11 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:30:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:30:17 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:30:56 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:32:36 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:32:39 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:32:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:32:55 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:33:03 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:33:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BlockProperty_values could not be found.
+Exception Attributes: array (
+  'class' => 'BlockProperty_values',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /block-property_values
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 18:33:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:33:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:40:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-01 18:40:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Block could not be found.
+Exception Attributes: array (
+  'class' => 'Block',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /block/
+Stack Trace:
+#0 E:\WWW\bitkom\htdocs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-02-01 18:40:26 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
